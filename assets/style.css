@@ -1,34 +1,91 @@
 *{
     box-sizing: border-box;
 }
-html{
+html {
     font-size: 14px;
     height: 100%;
 }
-body{
+
+body {
     background-color: #ee82ee;
-    font-family: 'Teko', sans-serif;
     display: flex;
     flex-direction: column;
+    font-family: 'Teko', sans-serif;
     height: 100%;
     margin: 0;
 }
-.headerMain{
-    background-color: #4B0082;
+
+/* utility classes */
+.btn {
+    background-color: #b756f4;
+    border: 1px solid #000;
+    border-radius: 0.2rem;
+    margin-top: 0.4rem;
+    padding: 0.6rem;
+}
+
+.btn-info {
+    background-color: beige;
+}
+
+.d-block {
+    display: block;
+}
+
+.m-t-1 {
+    margin-top: 1rem;
+}
+
+.form-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-vertical label {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.form-vertical input {
+    padding: 1rem;
+}
+
+.headerMain {
+    background-color:#4B0082;
+    ;
     color: #FFF;
     padding: 1rem;
 }
-.headerMain .logo{
+
+.headerMain .logo {
     font-size: 2rem;
 }
-.mainContent{
+
+.mainContent {
     align-items: center;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-.footerMain{
+
+.formAddTaskContainer {
+    background-color: #FFF;
+    margin-top: 2rem;
+    max-width: 840px;
+    padding: 2rem;
+    width: 100%;
+}
+
+.footerMain {
     background-color: #4B0082;
     color: #FFF;
     padding: 1rem;
 }
+
+/*cor background caixa DDA0DD
+FF00FF
+BA55D3
+8B008B
+
+bodybackground-color: #ee82ee;
+mainbackground-color: #4B0082;
+*/

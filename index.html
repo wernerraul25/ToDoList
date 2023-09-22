@@ -7,37 +7,61 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/reset.css"><!--a ordem importa, reset antes do style-->
+    <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header class="headerMain">
-        <h1 class="logo">ToDo List</h1>
+        <h1 class="logo">
+            ToDo List
+        </h1>
     </header>
+
     <main class="mainContent">
+        <!-- formulario -->
         <div class="formAddTaskContainer">
-            <form class="formVertical" id="frmTask" autocomplete="off">
-                <label for="txtTaskTitle">Título da Task</label>
-                <input type="text" name="txtTaskTitle" id="txtTaskTitle" placeholder="Adicione o título da Task" minlength="5" maxlength="60" required autofocus>
+            <form class="form-vertical" id="frmTask" autocomplete="off">
+                <label for="txtTaskTitle">Título da Task:</label>
+                <input type="text" name="txtTaskTitle" id="txtTaskTitle" placeholder="Adicione o título da task" minlength="5" maxlength="60" required autofocus>
 
                 <label for="txtTaskDescription">Descrição da Task</label>
-                <input type="text" name="txtTaskDescription" id="txtTaskDescription" placeholder="Adicione a descrição da Task">
-
+                <input type="text" name="txtTaskDescription" id="txtTaskDescription" placeholder="Insira uma descrição" maxlength="80">
+                
                 <input type="hidden" name="action" value="NEW_TASK" id="frmAction">
                 <input type="hidden" name="frmTaskId" value="" id="frmTaskId">
 
                 <div class="m-t-1">
-                    <button type="submit" class="btn">Cadastrar</button>
+                    <button type="submit" class="btn">
+                        Cadastrar
+                    </button>
                 </div>
             </form>
         </div>
+
+     <div class="taskContainer">
+        <div class="noTasks" id="emptyTaskListElement">
+            Nenhuma task encontrada
+        </div>
+     </div>
+     <div class="taskList" id="emptyTaskListElement">
+        <details class="taskItem">
+            <summary class="taskTitle">Details</summary>
+            Something small enough to escape casual notice
+            <div>
+                <button class="btn">Pronto</button>
+                <button class="btn-info"></button>
+            </div>
+        </details>
+     </div>
     </main>
+
     <footer class="footerMain">
         Desenvolvido por Raul Werner
-    </footer>    
-
+    </footer>
+    
     <script src="assets/script.js"></script>
 </body>
 </html>
