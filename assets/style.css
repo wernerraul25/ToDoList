@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+    height: 100%;
+}
+body{
+    background-color: #ee82ee;
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+.headerMain{
+    background-color: #4B0082;
+    color: #FFF;
+    padding: 1rem;
+}
+.headerMain .logo{
+    font-size: 2rem;
+}
+.mainContent{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.footerMain{
+    background-color: #4B0082;
+    color: #FFF;
+    padding: 1rem;
+}
