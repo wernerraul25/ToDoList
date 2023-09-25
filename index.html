@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -21,7 +19,6 @@
     </header>
 
     <main class="mainContent">
-        <!-- formulario -->
         <div class="formAddTaskContainer">
             <form class="form-vertical" id="frmTask" autocomplete="off">
                 <label for="txtTaskTitle">Título da Task:</label>
@@ -41,27 +38,29 @@
             </form>
         </div>
 
-     <div class="taskContainer">
-        <div class="noTasks" id="emptyTaskListElement">
-            Nenhuma task encontrada
-        </div>
-     </div>
-     <div class="taskList" id="emptyTaskListElement">
-        <details class="taskItem">
-            <summary class="taskTitle">Details</summary>
-            Something small enough to escape casual notice
-            <div>
-                <button class="btn">Pronto</button>
-                <button class="btn-info"></button>
+        <div class="taskContainer">
+            <div class="noTasks" id="emptyTaskListElement">
+                Nenhuma task cadastrada
             </div>
-        </details>
-     </div>
+    
+            <div class="taskList" id="taskListElement"></div>
+        </div>
     </main>
 
     <footer class="footerMain">
         Desenvolvido por Raul Werner
     </footer>
-    
+
+    <template>
+        <details class="taskItem">
+            <summary class="taskTitle">Details</summary>
+            Something small enough to escape casual notice.
+            <div>
+                <button class="btn">Pronto</button>
+                <button class="btn btn-info">Alterar</button>
+            </div>
+        </details>
+    </template>
+
     <script src="assets/script.js"></script>
-</body>
 </html>

@@ -1,13 +1,14 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 html {
     font-size: 14px;
     height: 100%;
 }
 
 body {
-    background-color: #ee82ee;
+    background-color: #FF5400;
     display: flex;
     flex-direction: column;
     font-family: 'Teko', sans-serif;
@@ -17,7 +18,7 @@ body {
 
 /* utility classes */
 .btn {
-    background-color: #b756f4;
+    background-color: #FF0054;
     border: 1px solid #000;
     border-radius: 0.2rem;
     margin-top: 0.4rem;
@@ -49,8 +50,9 @@ body {
     padding: 1rem;
 }
 
+/* classes do projeto */
 .headerMain {
-    background-color:#4B0082;
+    background-color: #390099;
     color: #FFF;
     padding: 1rem;
 }
@@ -67,24 +69,61 @@ body {
 }
 
 .formAddTaskContainer {
-    background-color: #FFF;
+    background-color: #FFBD00;
     margin-top: 2rem;
     max-width: 840px;
     padding: 2rem;
     width: 100%;
 }
 
+.taskContainer {
+    background-color: #FFBD00;
+    margin: 2rem;
+    max-width: 840px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.noTasks {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.taskItem {
+    border: 1px solid #FF0054;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 49%;
+}
+
+@media screen and (max-device-width: 480px) {
+    .taskItem {
+        width: 100%;
+    }
+}
+
+.taskTitle {
+    font-weight: 400;
+}
+
+.taskItem[open] .taskTitle {
+    margin-bottom: 10px;
+}
+
 .footerMain {
-    background-color: #4B0082;
+    background-color: #390099;
     color: #FFF;
     padding: 1rem;
 }
-
-/*cor background caixa DDA0DD
-FF00FF
-BA55D3
-8B008B
-
-bodybackground-color: #ee82ee;
-mainbackground-color: #4B0082;
-*/
