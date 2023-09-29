@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,19 +9,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header class="headerMain">
-        <h1 class="logo">ToDo List</h1>
+        <h1 class="logo">
+            ToDo List
+        </h1>
     </header>
 
     <main class="mainContent">
+        <!-- formulario -->
         <div class="formAddTaskContainer">
             <form class="form-vertical" id="frmTask" autocomplete="off">
                 <label for="txtTaskTitle">Título da Task:</label>
-                <input type="text" name="txtTaskTitle" id="txtTaskTitle" placeholder="Adicione o título da task" minlength="5" maxlength="60" required autofocus>
+                <input 
+                    type="text" 
+                    name="txtTaskTitle" 
+                    id="txtTaskTitle" 
+                    placeholder="Adicione o título da task" 
+                    minlength="5" 
+                    maxlength="60" 
+                    required 
+                    autofocus
+                >
 
                 <label for="txtTaskDescription">Descrição da Task</label>
                 <input type="text" name="txtTaskDescription" id="txtTaskDescription" placeholder="Insira uma descrição" maxlength="80">
@@ -36,29 +50,51 @@
             </form>
         </div>
 
+        <!-- tasks -->
         <div class="taskContainer">
             <div class="noTasks" id="emptyTaskListElement">
                 Nenhuma task cadastrada
             </div>
     
-            <div class="taskList" id="taskListElement"></div>
+            <div class="taskList" id="taskListElement">
+                <!-- inicio task -->
+                <details class="taskItem">
+                    <summary class="taskTitle">Details</summary>
+                    Something small enough to escape casual notice.
+                    <div>
+                        <button class="btn">Pronto</button>
+                        <button class="btn btn-info">Alterar</button>
+                    </div>
+                </details>
+                <!-- Fim task -->
+                <!-- inicio task -->
+                <details class="taskItem">
+                    <summary class="taskTitle">Details</summary>
+                    Something small enough to escape casual notice.
+                    <div>
+                        <button class="btn">Pronto</button>
+                        <button class="btn btn-info">Alterar</button>
+                    </div>
+                </details>
+                <!-- Fim task -->
+                <!-- inicio task -->
+                <details class="taskItem">
+                    <summary class="taskTitle">Details</summary>
+                    Something small enough to escape casual notice.
+                    <div>
+                        <button class="btn">Pronto</button>
+                        <button class="btn btn-info">Alterar</button>
+                    </div>
+                </details>
+                <!-- Fim task -->
+            </div>
         </div>
     </main>
 
     <footer class="footerMain">
         Desenvolvido por Raul Werner
     </footer>
-
-    <template>
-        <details class="taskItem">
-            <summary class="taskTitle">Details</summary>
-            Something small enough to escape casual notice.
-            <div>
-                <button class="btn">Pronto</button>
-                <button class="btn btn-info">Alterar</button>
-            </div>
-        </details>
-    </template>
-
+    
     <script src="assets/script.js"></script>
+</body>
 </html>
