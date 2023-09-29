@@ -99,7 +99,7 @@ body {
 }
 
 .taskItem {
-    border: 1px solid #e7c6ff;
+    border: 1px solid #000;
     border-radius: 0.4rem;
     font-size: 1.5rem;
     font-weight: 100;
